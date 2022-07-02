@@ -22,7 +22,7 @@ int main(void)
 					printf("%d is negative\n", n);
 }
 
-retun (0);
+return (0);
 }
 
 
