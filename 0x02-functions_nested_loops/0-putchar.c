@@ -1,4 +1,4 @@
-#include <main.h>
+#include "main.h"
 /**
  * main - prints to string
  * Description: Prints positive, negative or zero
