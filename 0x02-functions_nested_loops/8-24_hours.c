@@ -1,29 +1,38 @@
 #include "main.h"
 /**
- * print_square - Draws a diagonal line on the terminal
- * @size: Long of the line
- * Return: none
+ * jack_bauer - function that prints every minute of the day, 24 hour clock
+ * h = hour, m = minutes
+ * / 10 allows second digit to rotate
+ * for loop breaks before passing 24:00
+ * Return: 24 hour clock line by line
  */
-void print_square(int size)
+void jack_bauer(void)
 
 {
+	int h, m;
 
-	int i, j;
-
-	for (i = 0; i < size; i++)
+	for (h = 0; h < 24; h++)
 
 	{
 
-		for (j = 0; j < size; j++)
+		for (m = 0; m < 60; m++)
 
-			_putchar('#');
+		{
 
-		_putchar('\n');
+			_putchar((h / 10) + '0');
+
+			_putchar((h % 10) + '0');
+
+			_putchar(':');
+
+			_putchar((m / 10) + '0');
+
+			_putchar((m % 10) + '0');
+
+			_putchar('\n');
+
+		}
 
 	}
-
-	if (i == 0)
-
-		_putchar('\n');
 
 }
