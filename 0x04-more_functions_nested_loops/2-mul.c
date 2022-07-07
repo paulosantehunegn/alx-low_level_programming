@@ -1,15 +1,11 @@
 #include "main.h"
-#include <stdio.h>
 /**
- * main - check the code for Holberton School students.
- *
- * Return: Always 0.
+ * mul - function that prints the numbers, from 0 to 9, followed by a new line.
+ * @a: the int for the paramaters of my function
+ * @b: the int for the paramaters of my function
+ * Return: 0
  */
-
-int main(void)
+int mul(int a, int b)
 {
-	printf("%d\n", mul(98, 1024));
-	printf("%d\n", mul(-402, 4096));
-
-	return (0);
+	return (a * b);
 }
