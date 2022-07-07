@@ -1,29 +1,26 @@
-#include "holberton.h"
-#include <stdio.h>
+#include "main.h"
 /**
- * more_numbers - Print numbers between 0 to 14 incl.
+ * more_numbers - function that checks for uppercase character
+ * Return: 0
  *
- * Return: Void.
  */
 void more_numbers(void)
 {
-	int i;
-	int x;
+	int a = 0;
+	int b = 0;
 
-	for (x = 0; x < 10; x++)
+	while (b <= 9)
 	{
-		i = 0;
-		while (i <= 14)
+		while (a <= 14)
 		{
-			if (i >= 10)
-			{
-				_putchar(i / 10 + '0');
-			}
-			_putchar(i % 10 + '0');
+			if (a > 9)
 
-			i++;
+				_putchar(a / 10 + '0');
+			_putchar(a % 10 + '0');
+			a++;
 		}
-
 		_putchar('\n');
+		b++;
+		a = 0;
 	}
 }
