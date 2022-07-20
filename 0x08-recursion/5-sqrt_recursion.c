@@ -1,12 +1,14 @@
 #include "main.h"
+#include <stdio.hi>
+
+int _sqrt(int n, int i);
 /**
  * _sqrt_recursion - main funct
  * @n: int n
  *
  * Return: int
  */
-int i;
-int _sqrt(int n, int i);
+
 
 int _sqrt_recursion(int n)
 {
