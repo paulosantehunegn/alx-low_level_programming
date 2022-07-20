@@ -1,5 +1,5 @@
 #include "main.h"
-#include <stdio.hi>
+#include <stdio.h>
 
 int _sqrt(int n, int i);
 /**
