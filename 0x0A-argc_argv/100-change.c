@@ -22,18 +22,18 @@ int main(int argc, char *argv[])
 				leastcents += money / cents[i];
 				money = money % cents[i];
 			if (money % cents[i] == 0)
-			{
+			{	
 				break;
 			}
-		}
-	}
+			 
+		        }
+	        }
 	printf("%d\n", leastcents);
-}
+       }
 else
 {
 	printf("Error\n");
 	return (1);
 }
 return (0)
-	}
-
+}
