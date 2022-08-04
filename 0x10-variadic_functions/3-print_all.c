@@ -17,8 +17,7 @@ void print_all(const char * const format, ...)
 		switch (format[j])
 		{ case 'c':
 			switch (start)
-			{ case 1: printf(", ");
-			}
+			{ case 1: printf(", "); }
 			start = 1;
 			printf("%c", va_arg(list, int));
 			break;
@@ -36,8 +35,7 @@ void print_all(const char * const format, ...)
 			break;
 			case's':
 			switch (start)
-			{ case 1: printf(", ");
-			}
+			{ case 1: printf(", ");	}
 			start = 1;
 			p = va_arg(list, char*);
 			if (p)
