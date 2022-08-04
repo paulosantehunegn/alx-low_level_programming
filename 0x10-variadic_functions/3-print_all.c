@@ -4,7 +4,6 @@
 /**
  * print_all - print char, integer, float and string
  * @format: format
- *
  */
 void print_all(const char * const format, ...)
 {
@@ -45,8 +44,9 @@ void print_all(const char * const format, ...)
 			{ printf("%s", p);
 				break; }
 			printf("%p", p);
-			break; }	j++;
-	}printf("\n");
+			break; }
+		j++;
+	}
+	printf("\n");
 	va_end(list);
-
 }
